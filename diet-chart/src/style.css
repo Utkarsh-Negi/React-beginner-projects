@@ -8,23 +8,32 @@
   display: block;
   text-align: center;
 }
+.outer h1 {
+  padding: 1rem;
+}
 
 .container {
-  margin: 5rem 25rem;
+  margin: auto;
+  padding: 5px;
   height: 80vh;
-  border: 1px solid black;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   width: 500px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .small-box {
-  padding: 0.5rem;
-  height: 20vh;
+  padding: 4rem 0;
+  height: 20rem;
   border: 1px solid grey;
   border-radius: 5px;
-  margin: 1px;
-  background: rgb(11, 185, 127);
-  display: inline-block;
+  margin-top: 6px;
+  margin-right: 32px;
+  margin-left: 10px;
+  background: rgb(15, 158, 91);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
 }
