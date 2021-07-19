@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outer {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.container {
+  margin: 5rem 25rem;
+  height: 80vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  overflow: scroll;
+}
+
+.small-box {
+  padding: 0.5rem;
+  height: 20vh;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 1px;
+  background: rgb(11, 185, 127);
+  display: inline-block;
+}
