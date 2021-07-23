@@ -10,8 +10,10 @@ function Chart({ food, cal, data, setData, index }) {
   return (
     <div className="small-box">
       <h1>{food}</h1>
-      <button onClick={dataDeleted}>DEL</button>
-      <p>You have consumed {cal} calories today.🤯</p>
+      <button onClick={dataDeleted}>
+        <i className="fas fa-trash"></i>
+      </button>
+      <p>You have consumed {cal} calories today.</p>
     </div>
   );
 }
