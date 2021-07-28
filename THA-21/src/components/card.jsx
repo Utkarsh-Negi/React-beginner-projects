@@ -28,11 +28,13 @@ function NewItem({ update, remove, item, index }) {
             onChange={(e) => update(index, { cal: e.target.value })}
           />
         ) : (
-          <p className="='card-text'"> You have consumed {item.cal} calories</p>
+          <p> You have consumed {item.cal} calories</p>
         )}
         <div>
-          <button onClick={() => remove(index)}>Delete</button>
-          <button onClick={() => setEdit(!edit)}>
+          <button id="butt" onClick={() => remove(index)}>
+            Delete
+          </button>
+          <button id="butt" onClick={() => setEdit(!edit)}>
             {edit ? 'Done' : 'Edit'}
           </button>
         </div>

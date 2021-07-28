@@ -12,10 +12,10 @@ function Add({ addItem }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form className="form" onSubmit={handleSubmit}>
+      <div className="outer">
         <div>
-          <label>Title</label>
+          {/* <label className="head">Title</label> */}
           <input
             type="text"
             name="title"
@@ -27,7 +27,7 @@ function Add({ addItem }) {
           />
         </div>
         <div>
-          <label>Calorie</label>
+          {/* <label className="head">Calorie</label> */}
           <input
             type="number"
             name="number"
@@ -39,7 +39,9 @@ function Add({ addItem }) {
           />
         </div>
       </div>
-      <button type="submit">Add Item</button>
+      <button type="submit" id="butt">
+        Add Item
+      </button>
     </form>
   );
 }

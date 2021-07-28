@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import NewItem from './components/card';
 import Add from './components/item';
+import './style.css';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -20,18 +21,19 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
+      <h1>Caltrack</h1>
       <Add addItem={addItem} />
       {items.length === 0 ? (
-        <h3>Start Adding Items</h3>
+        <h2>Start Adding Items</h2>
       ) : (
         items.map((item, index) => (
           <NewItem
             item={item}
             key={index}
             index={index}
-            updateItem={update}
-            removeItem={remove}
+            update={update}
+            remove={remove}
           />
         ))
       )}
