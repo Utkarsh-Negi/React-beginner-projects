@@ -10,7 +10,7 @@ const Meme = ({ meme }) => {
       </div>
       <div>
         <button>Generate Meme</button>
-        <button>Reset Meme</button>
+        <button>Choose Meme </button>
       </div>
     </div>
   );
