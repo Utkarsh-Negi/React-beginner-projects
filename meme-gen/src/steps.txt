@@ -1,0 +1,4 @@
+Render all meme templates
+Create Meme Page, inputs and buttons
+Generate URL to get meme 
+Display meme from Response
