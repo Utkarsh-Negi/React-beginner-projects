@@ -15,7 +15,7 @@ const Meme = ({ meme, setMeme }) => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        setMeme({ ...meme, url: data.data.url });
       });
   };
   return (
