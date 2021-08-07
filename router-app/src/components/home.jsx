@@ -1,4 +1,4 @@
-function Home(login, setLogin) {
+function Home({ login, setLogin }) {
   return (
     <div className="home">
       <div className="header">
