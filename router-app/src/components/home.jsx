@@ -3,7 +3,7 @@ function Home(login, setLogin) {
     <div className="home">
       <div className="header">
         <h1>Home</h1>
-        <p>If not logged in you cant access, Profile & Dashboard </p>
+        <p>If not logged in can't access, Profile & Dashboard </p>
         {login ? (
           <button onClick={() => setLogin(false)}>Logout</button>
         ) : (
