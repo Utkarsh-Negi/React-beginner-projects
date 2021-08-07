@@ -1,7 +1,9 @@
 function Profile() {
   return (
     <div className="pro">
-      <h1>Profile</h1>
+      <h1>
+        Profile:<span>Private Routing</span>
+      </h1>
     </div>
   );
 }

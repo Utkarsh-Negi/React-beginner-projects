@@ -1,7 +1,7 @@
 function Home({ login, setLogin }) {
   return (
-    <div>
-      <div>
+    <div className="home">
+      <div className="content">
         <h1>Home</h1>
         <p>If not logged in can't access, Profile & Dashboard </p>
         {login ? (

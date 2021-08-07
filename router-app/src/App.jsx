@@ -11,26 +11,28 @@ function App() {
   const [login, setLogin] = useState(false);
 
   return (
-    <Router>
-      <Nav login={login} />
-      <Switch>
-        <Route exact path="/">
-          <Home login={login} setLogin={setLogin} />
-        </Route>
+    <div className="links">
+      <Router>
+        <Nav login={login} />
+        <Switch>
+          <Route exact path="/">
+            <Home login={login} setLogin={setLogin} />
+          </Route>
 
-        <Route path="/about">
-          <About />
-        </Route>
+          <Route path="/about">
+            <About />
+          </Route>
 
-        <Route path="/profile">
-          <Profile />
-        </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
 
-        <Route path="/dashboard">
-          <Dash />
-        </Route>
-      </Switch>
-    </Router>
+          <Route path="/dashboard">
+            <Dash />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
