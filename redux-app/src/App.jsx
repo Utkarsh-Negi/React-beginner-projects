@@ -14,6 +14,7 @@ function App() {
         type="email"
         value={userEmail}
         placeholder="e-mail"
+        required
         onChange={(e) => {
           dispatch(email(e.target.value));
         }}
@@ -23,13 +24,14 @@ function App() {
         type="text"
         value={userName}
         placeholder="name"
+        required
         onChange={(e) => {
           dispatch(username(e.target.value));
         }}
       />
       <h1>Data</h1>
-      <h3>Email:{userEmail}</h3>
-      <h3>Name:{userName}</h3>
+      <h3>Email : {userEmail}</h3>
+      <h3>Name : {userName}</h3>
 
       {/* <h1>Counter using redux</h1>
       <button
