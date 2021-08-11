@@ -12,4 +12,17 @@ const deleteItem = (id) => {
   };
 };
 
-export { addItem, deleteItem };
+const loadTodo = () => {
+  return (dispatch) => {
+    fetch('https://jsonplaceholder.typicode.com/todos')
+      .then((res) => res.json())
+      .then((todos) => {
+        return dispatch({
+          type: 'LOAD_TODO',
+          payload: todos,
+        });
+      });
+  };
+};
+
+export { addItem, deleteItem, loadTodo };
