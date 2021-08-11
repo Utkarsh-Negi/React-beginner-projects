@@ -27,6 +27,7 @@ function Addtodo() {
       >
         ADD
       </button>
+      <button>Load</button>
     </div>
   );
 }
