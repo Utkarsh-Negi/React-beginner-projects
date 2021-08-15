@@ -44,10 +44,32 @@
   font-size: 0.8rem;
   font-weight: 500px;
   font-family: 'Merriweather', serif;
+  margin: 10px 0;
 }
 
 .card .temp {
   font-size: 4rem;
   margin-left: 30.39px;
   font-weight: 500;
+}
+
+.card .desc {
+  font-size: 0.8rem;
+  font-weight: 500px;
+}
+
+.details {
+  margin: 20px 0;
+}
+
+.details .title {
+  font-size: 0.7rem;
+}
+
+.details .data {
+  font-size: 1.4rem;
+  font-weight: 500px;
+}
+.details .data .unit {
+  font-size: 0.8rem;
 }
