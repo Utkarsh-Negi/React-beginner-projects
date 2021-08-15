@@ -6,7 +6,7 @@ function App() {
   const [placeData, setPlaceData] = useState({});
   const updatePlaceData = () => {
     fetch(
-      `https://api.weatherapi.com/v1/current.json?key=4817e57f877545a2bde204405211208&q=${place}`
+      `https://api.weatherapi.com/v1/forecast.json?key=4817e57f877545a2bde204405211208&q=${place}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -16,7 +16,7 @@ function App() {
   };
   return (
     <div className="App">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-12 form">
             <input
