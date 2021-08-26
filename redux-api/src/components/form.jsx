@@ -1,5 +1,8 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { updatePlace, updatePlaceData } from '../actions';
 const Form = () => {
-  const place = '';
+  const place = useSelector((state) => state.place);
+  const dispatch = useDispatch();
   return (
     <div className="container">
       <div className="row">
@@ -8,12 +11,14 @@ const Form = () => {
             type="text"
             value={place}
             onChange={(e) => {
-              // setPlace(e.target.value);
+              dispatch(updatePlace(e.target.value));
             }}
           />
           <button
             className="btn btn-primary"
-            // onClick={}>
+            onClick={() => {
+              dispatch(updatePlaceData(place));
+            }}
           >
             Submit
           </button>

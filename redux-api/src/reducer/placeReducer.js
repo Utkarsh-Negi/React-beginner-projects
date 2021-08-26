@@ -1,4 +1,4 @@
-const placeReducer = (state = '', action) => {
+const placeReducer = (state = 'Rishikesh', action) => {
   if (action.type === 'UPDATE_PLACE') {
     return action.payload;
   }
