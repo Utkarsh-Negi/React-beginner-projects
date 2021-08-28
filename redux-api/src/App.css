@@ -6,6 +6,12 @@
 
 .App {
   text-align: center;
+  height: 100vh;
+}
+
+.App.dark {
+  background-color: black;
+  color: white;
 }
 .form {
   margin-top: 100px;
@@ -29,10 +35,14 @@
 
 .card {
   margin-top: 50px;
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
     rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
     rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+}
+.card.dark {
+  background-color: rgb(34, 34, 34);
+  color: white;
 }
 
 .card img {
@@ -72,4 +82,8 @@
 }
 .details .data .unit {
   font-size: 0.8rem;
+}
+
+.default {
+  padding: 0.5rem;
 }

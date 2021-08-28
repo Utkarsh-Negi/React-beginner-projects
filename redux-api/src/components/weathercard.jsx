@@ -1,10 +1,13 @@
+import { useSelector } from 'react-redux';
+
 const Card = () => {
-  const placeData = {};
+  const placeData = useSelector((state) => state.placeData);
+  const theme = useSelector((state) => state.theme);
   return (
     <div className="container">
       <div className="row">
         <div className="offset-md-4 col-12 col-md-4 weather">
-          <div className="card">
+          <div className={theme ? 'card dark' : 'card white'}>
             {placeData.location ? (
               <div>
                 <img src={placeData.current.condition.icon} alt="" />
@@ -39,7 +42,7 @@ const Card = () => {
                 </div>
               </div>
             ) : (
-              <h3>Place not found</h3>
+              <h3 className="default">Place not found</h3>
             )}
           </div>
         </div>

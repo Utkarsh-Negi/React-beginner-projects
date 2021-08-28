@@ -12,7 +12,6 @@ const updatePlaceData = (place) => {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         dispatch({
           type: 'UPDATE_PLACE_DATA',
           payload: data,
@@ -20,4 +19,10 @@ const updatePlaceData = (place) => {
       });
   };
 };
-export { updatePlace, updatePlaceData };
+
+const toggleTheme = () => {
+  return {
+    type: 'TOGGLE_THEME',
+  };
+};
+export { updatePlace, updatePlaceData, toggleTheme };
