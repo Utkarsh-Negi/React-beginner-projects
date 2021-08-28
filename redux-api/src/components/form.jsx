@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { updatePlace, updatePlaceData } from '../actions';
 const Form = () => {
   const place = useSelector((state) => state.place);
+  const theme = useSelector((state) => state.theme);
   const dispatch = useDispatch();
   return (
     <div className="container">
@@ -15,7 +16,7 @@ const Form = () => {
             }}
           />
           <button
-            className="btn btn-primary"
+            className={theme ? 'btn btn-light' : 'btn btn-dark'}
             onClick={() => {
               dispatch(updatePlaceData(place));
             }}
